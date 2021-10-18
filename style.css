@@ -1,62 +1,43 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url('fonts/subset-Roboto-Medium.eot');
-    src: url('fonts/subset-Roboto-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/subset-Roboto-Medium.woff2') format('woff2'),
-        url('fonts/subset-Roboto-Medium.woff') format('woff'),
-        url('fonts/subset-Roboto-Medium.ttf') format('truetype'),
-        url('fonts/subset-Roboto-Medium.svg#Roboto-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+* { 
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family : 'Roboto', sans-serif;
 }
 
-@font-face {
-    font-family: 'Roboto';
-    src: url('fonts/subset-Roboto-Regular.eot');
-    src: url('fonts/subset-Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/subset-Roboto-Regular.woff2') format('woff2'),
-        url('fonts/subset-Roboto-Regular.woff') format('woff'),
-        url('fonts/subset-Roboto-Regular.ttf') format('truetype'),
-        url('fonts/subset-Roboto-Regular.svg#Roboto-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-* { box-sizing: border-box;}
-
-.wrap {
-    background: #EEEFF1;
-    width: 1920px;
-    display: block;
+.header {
+    background-color: #EEEFF1;
+    padding-top: 79px;
+    padding-bottom: 141px;
 }
 
 .container {
-    display: block;
-    width: 1110px;
+    max-width: 1110px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.header {
-    padding-top: 79px;
+.nav{
+    margin-bottom: 160px;
+}
+
+.item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 42px;
 }
 
 .link {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 0.1em;
     color: #000000;
     text-transform: uppercase;
     text-decoration: none;
-    margin-right: 42px;
 }
 
+.link.active,
 .link:hover {
     color: #34547A;
     font-weight: 500;
@@ -66,119 +47,133 @@
     margin-right: 0px;
 }
 
+
 .title {
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
     font-size: 48px;
     line-height: 60px;
     color: #000000;
-    margin-top: 257px;
+    margin-bottom: 45px;
 }
 
 .text {
     width: 540px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 26px;  
     color: #727272;
-    margin-top: 45px; 
+    margin-bottom: 54px;
 }
 
 .button {
-    width: 225px;
-    margin-top: 54px;
-    background: #34547A;
-    margin-bottom: 141px;
-}
-
-.text.in-button {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #34547A;
+    font-size: 16px;
+    line-height: 26px;
     letter-spacing: 0.1em;
     color: #FFFFFF;
-    width: auto;
-    padding-top: 19px;
-    padding-bottom: 20px;
-    margin-top: 0;
-    text-transform: uppercase;
+    text-decoration: none;
+    padding: 19px 41px 20px 41px;
 }
 
-.wrap.about {
-    background: #FFFFFF;
+.about {
+    background-color: #F9F9F9;
+    padding-top: 112px;
+    padding-bottom: 89px;
 }
 
-.title.about {
+.sub-title {
+    font-weight: 500;
     font-size: 32px;
     line-height: 38px;
     text-align: center;
-    margin-top: 112px;
+    margin-bottom: 42px;
 }
 
-.text.about {
-    margin-top: 45px;
-    margin-bottom: 89px;
+.text.center{
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    margin-left: 300px;
 }
 
-.wrap.aside {
-    background: #34547A;
+.about .text.center{
+    margin-bottom: 0px;
 }
 
-.icon {
-    margin-top: 100px;
-    margin-bottom: 100px;
+.cards {
+    background-color: #34547A;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.card-icon {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.card-info {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 3px;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
 }
 
 .card {
     display: inline-block;
     vertical-align: top;
-    width: 90px;
-    margin-right: 45px;
-    margin-top: 103px;
-    margin-bottom: 100px;
-}
-
-.title.spesial {
-    display: block;
-    font-size: 21px;
-    line-height: 24px;
-    color: #FFFFFF;
-    margin-left: 20px;
-    margin-top: 0px;
-}
-
-.text.spesial {
-    display: block;
-    line-height: 18px;
-    color: #FFFFFF;
-    margin-top: 5px;
-    margin-left: 20px;
+    margin-right: 49px;
 }
 
 .card:last-child {
     margin-right: 0px;
 }
 
-.title.about.work {
+.content {
+    background-color: #EEEFF1;
+    ;
     padding-top: 100px;
-    margin-top: 0px;
+    padding-bottom: 100px;
 }
 
 .video {
+    display: block;
     width: 1110px;
     height: 600px;
-    margin-bottom: 100px;
 }
 
-.title.spesial.finish {
+.content .text.center {
+    margin-bottom: 46px;
+}
+
+.footer {
+    background-color: #34547A;
     padding-top: 50px;
+    padding-bottom: 47px;
+    color: #FFFFFF;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
     margin-bottom: 15px;
 }
 
-.text.spesial.finish {
+.copyright {
     font-size: 13px;
     line-height: 15px;
-    padding-bottom: 47px;
 }
